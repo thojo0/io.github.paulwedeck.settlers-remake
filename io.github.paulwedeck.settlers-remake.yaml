@@ -24,18 +24,15 @@ modules:
       - cp -r JSettlers $FLATPAK_DEST/JSettlers
       - install -Dm755 jsettlers.sh $FLATPAK_DEST/bin/jsettlers
       - install -Dm755 jsettlers-mapcreator.sh $FLATPAK_DEST/bin/jsettlers-mapcreator
-      - install -Dm644 icon.png  $FLATPAK_DEST/share/icons/hicolor/128x128/apps/$FLATPAK_ID.png
+      - install -Dm644 JSettlers/icon.png  $FLATPAK_DEST/share/icons/hicolor/128x128/apps/$FLATPAK_ID.png
       - install -Dm644 io.github.paulwedeck.settlers-remake.desktop -t  $FLATPAK_DEST/share/applications
       - install -Dm644 io.github.paulwedeck.settlers-remake.mapcreator.desktop -t  $FLATPAK_DEST/share/applications
       - install -Dm644 io.github.paulwedeck.settlers-remake.metainfo.xml -t  $FLATPAK_DEST/share/metainfo
     sources:
       - type: archive
-        url: https://github.com/paulwedeck/settlers-remake/releases/download/v0.6.0.6-alpha/JSettlers.zip
-        sha256: d22880a2ec52dc3e04410666b0dc39b4f7731fe2cf807a3ba45699b2271e27dd
+        url: https://github.com/paulwedeck/settlers-remake/releases/download/v0.6.0.9-alpha/JSettlers.zip
+        sha256: 98f60ba9a0d4dbc81015be6a174306bb1434d34de237ef01ff907b7823dea39d
         dest: JSettlers
-      - type: file
-        url: https://github.com/paulwedeck/settlers-remake/raw/5d15b723153d9ac1af3d2d8b7ae25911162d84f1/jsettlers.main.swing/src/main/resources/jsettlers/main/swing/icon.png
-        sha256: 830aa4abeff112a3ca8002fcab0677cf5329e3575687c8e4bce8979130824ba7
       - type: file
         path: io.github.paulwedeck.settlers-remake.desktop
       - type: file
