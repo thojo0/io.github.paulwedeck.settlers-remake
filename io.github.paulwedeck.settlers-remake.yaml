@@ -12,6 +12,9 @@ finish-args:
   - --share=network
   - --socket=pulseaudio
 
+env:
+  SETTLERS_MAPS: /app/JSettlers/maps
+
 modules: 
   - name: openjdk
     buildsystem: simple
