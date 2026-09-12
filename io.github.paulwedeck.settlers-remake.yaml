@@ -11,9 +11,7 @@ finish-args:
   - --device=dri
   - --share=network
   - --socket=pulseaudio
-
-env:
-  SETTLERS_MAPS: /app/JSettlers/maps
+  - --env=SETTLERS_MAPS=/app/JSettlers/maps
 
 modules: 
   - name: openjdk
